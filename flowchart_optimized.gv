@@ -1,0 +1,14 @@
+// Optimized Flowchart
+digraph {
+	nodesep=1.0 rankdir=LR ranksep=1.0 splines=ortho
+	node [fontsize=12 shape=ellipse]
+	edge [fontsize=10]
+	A [label=Start]
+	B [label=Process]
+	C [label=Decision]
+	D [label=End]
+	A -> B [label="step 1"]
+	B -> C [label="step 2"]
+	C -> D [label=Yes]
+	C -> B [label=No]
+}

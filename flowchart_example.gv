@@ -1,0 +1,15 @@
+// Simple Flowchart
+digraph {
+	nodesep=0.8 rankdir=TB ranksep=0.8
+	node [fontsize=12 shape=ellipse]
+	edge [fontsize=10]
+	splines=ortho
+	A [label=Start]
+	B [label=Process]
+	C [label=Decision]
+	D [label=End]
+	A -> B [label="step 1"]
+	B -> C [label="step 2"]
+	C -> D [label=Yes]
+	C -> B [label=No]
+}
